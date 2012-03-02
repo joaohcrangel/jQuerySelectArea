@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/jQuery Plugin"  lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>jQuery Plugin SelectArea by JotaQuery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SelectArea é um plugin jQuery de código aberto e serve para capturar as coordenadas de uma seleção em um determinado elemento HTML">
+<meta name="author" content="Joao Rangel">
+<meta itemprop="name" content="jQuery Plugin selectArea()">
+<meta itemprop="description" content="SelectArea é um plugin jQuery de código aberto e serve para capturar as coordenadas de uma seleção em um determinado elemento HTML">
+<meta itemprop="image" content="http://www.jotaquery.com.br/projetos/plugins/selectArea/img/screen.jpg">
+<link rel="stylesheet" type="text/css" href="../css/superhero/bootstrap.min.css">
+<style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Condiment|Nova+Mono);
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	height:100%;
+	width:100%;
+	text-align:center;
+}
+p {
+	font-family: 'Nova Mono', cursive;
+}
+#banner {
+	color:#2A333C;
+}
+#banner h1 {
+	font-family: 'Condiment', cursive;
+	font-size:72px;
+	margin-bottom:30px;
+}
+#Area {
+	margin:0 auto;
+	text-align:left;
+	background-color:#FFF;
+	width:50%;
+	height:600px;
+}
+</style>
+<link href="../css/bootstrap-responsive.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="active"><a href="../index.html">Voltar para jQuery.selectArea()</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </div>
+</div>
+<script src="../js/jquery-1.7.1.min.js"></script> 
+<!-- Plugin jQuery selectArea --> 
+<script src="../download/jquery.selectArea-1.0.js"></script> 
+<script type="text/javascript">
+$(function(){
+	//Aplicando plugin ao seletor
+	$('#Area').selectArea();
+});
+</script>
+<div id="Area"></div>
+<script type="text/javascript">
+window.___gcfg = {lang: 'pt-BR'};
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();  
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-8792864-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+function callback(){
+	window.location.href='https://plusone.google.com/_/+1/confirm?hl=en&url='+window.location.href;	
+}
+</script>
+<div class="container" style="text-align:left">
+  <hr>
+  <footer>
+    <p>JotaQuery.com.br | João Rangel</p>
+    <p>Código licenciado sob a licença <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>. Documentação licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    <p>
+      <g:plusone annotation="inline" callback="callback"></g:plusone>
+    </p>
+  </footer>
+</div>
+</body>
+</html>

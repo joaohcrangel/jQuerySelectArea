@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/jQuery Plugin"  lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>jQuery Plugin SelectArea by JotaQuery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SelectArea é um plugin jQuery de código aberto e serve para capturar as coordenadas de uma seleção em um determinado elemento HTML">
+<meta name="author" content="Joao Rangel">
+<meta itemprop="name" content="jQuery Plugin selectArea()">
+<meta itemprop="description" content="SelectArea é um plugin jQuery de código aberto e serve para capturar as coordenadas de uma seleção em um determinado elemento HTML">
+<meta itemprop="image" content="http://www.jotaquery.com.br/projetos/plugins/selectArea/img/screen.jpg">
+<link rel="stylesheet" type="text/css" href="css/superhero/bootstrap.min.css">
+<style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Condiment|Nova+Mono);
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+p {
+	font-family: 'Nova Mono', cursive;
+}
+#banner {
+	color:#2A333C;
+}
+#banner h1 {
+	font-family: 'Condiment', cursive;
+	font-size:72px;
+	margin-bottom:30px;
+}
+</style>
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="active"><a href="index.html">Inicio</a></li>
+          <li><a href="#exemplos">Exemplos</a></li>
+          <li><a href="#instalacao">Instalaçao</a></li>
+          <li><a href="#configuracao">Configuração</a></li>
+          <li><a href="#doacoes">Doações</a></li>
+          <li><a href="#desenvolvedor">Desenvolvedor</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </div>
+</div>
+<div class="container"> 
+  
+  <!-- Main hero unit for a primary marketing message or call to action -->
+  <div id="banner" class="hero-unit">
+    <h1>jQuery.selectArea();</h1>
+    <p>SelectArea é um plugin <a target="_blank" href="http://jquery.com/">jQuery</a> de código aberto e serve para capturar as coordenadas de uma seleção em um determinado elemento HTML. Após o usuário criar uma seleção você terá as posição X e Y do primeiro ponto, segundo ponto e largura e altura da seleção.</p>
+    <p>Veja alguns exemplos de como usar este simples, porém útil plugin.</p>
+    <p class="download-info"> <!--<a href="https://github.com/joaohcrangel/jQuery-Select-Area" class="btn btn-primary btn-large">Ver projeto no GitHub</a>--> <a href="download/jquery.selectArea-1.0.js" class="btn btn-success btn-large">Download jQuery.selectArea()</a> </p>
+    <div class="pull-left">
+      <g:plusone annotation="inline" callback="callback"></g:plusone>
+    </div>
+  </div>
+  <a id="exemplos"></a>
+  <div class="row"> <span class="span12">
+    <hr>
+    <h2>Exemplos de Uso</h2>
+    </span>
+    <div class="span4">
+      <h4>Básico</h4>
+      <p>Exemplo do uso básico deste plugin. Confira como incluir e chamar o plugin em sua página.</p>
+      <p><a class="btn" href="exemplos/basico.html">Demo &raquo;</a></p>
+    </div>
+    <div class="span4">
+      <h4>Coordenadas</h4>
+      <p>Exemplo de como obter as coordenadas e tamanho da seleção.</p>
+      <p><a class="btn" href="exemplos/coordenadas.html">Demo &raquo;</a></p>
+    </div>
+    <div class="span4">
+      <h4>Criando DIV dinâmicamente</h4>
+      <p>Exemplo que cria elementos DIV marcando exatamente onde foi realizada a seleção.</p>
+      <p><a class="btn" href="exemplos/criando-div-dinamicamente.html">Demo &raquo;</a></p>
+    </div>
+    <span class="span12">
+    <hr>
+    <a id="instalacao"></a>
+    <h2>Instalação</h2>
+    <p>Adiconar este treche de código após incluir a biblioteca jQuery:</p>
+    <pre class="prettyprint linenums" style="margin-bottom: 9px;"><ol class="linenums"><li class="L0"><span class="tag">&lt;script src=&quot;jquery.selectArea-1.0.js&quot;&gt;&lt;/script&gt;</span></li></ol>
+</pre>
+    <hr>
+    <a id="configuracao"></a>
+    <h2>Configuração</h2>
+    <p>Crie um seletor jQuery que retone o elemento que deseja habilitar as seleções:</p>
+    <pre class="prettyprint linenums" style="margin-bottom: 9px;"><ol class="linenums"><li class="L0">$(function(){</li><li class="L0">    $('body').selectArea();</li><li class="L0">});</li></ol>
+</pre>
+    <hr>
+    <a id="doacoes"></a>
+    <h2>Doações</h2>
+    <p>Suas doações irá ajudar a apoiar todas as atividades de desenvolvimento e manutenção deste Projeto e de novos Projetos do JotaQuery.com.br. Obrigado por seu apoio!</p>
+    <div class="span12">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+        <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira mais fácil e segura de efetuar pagamentos online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+    <a id="desenvolvedor"></a>
+    <h2>Desenvolvedor</h2>
+    <div class="row">
+      <div class="span1"><img src="https://lh5.googleusercontent.com/-nIJGOTP3zeI/AAAAAAAAAAI/AAAAAAAAGhw/z6vDWcDM0R8/s200-c-k/photo.jpg" width="100%"></div>
+      <div class="span11">
+        <p>João Rangel é um desenvolvedor WEB especializado em Front-End JavaScript, HTML5, CSS3 e PHP.</p>
+        <p>Social Links:</p>
+        <a href="https://plus.google.com/111850052332698386012"><img src="img/google-pencil.png" width="24" style="float:left; margin-right:10px;"></a> <a href="http://www.facebook.com/joaohcrangel"><img src="img/facebook-pencil.png" width="24" style="float:left; margin-right:10px;"></a> <a href="http://www.youtube.com/user/joaohcrangel"><img src="img/youtube-pencil.png" width="24" style="float:left; margin-right:10px;"></a> </div>
+    </div>
+    </span> </div>
+  <hr>
+  <footer>
+    <p>JotaQuery.com.br | João Rangel</p>
+    <p>Código licenciado sob a licença <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>. Documentação licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    <p>
+      <g:plusone annotation="inline" callback="callback"></g:plusone>
+    </p>
+  </footer>
+</div>
+<script src="js/jquery-1.7.1.min.js"></script> 
+<script src="download/jquery.selectArea-1.0.js"></script> 
+<script type="text/javascript">
+window.___gcfg = {lang: 'pt-BR'};
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();  
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-8792864-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+function callback(){
+	window.location.href='https://plusone.google.com/_/+1/confirm?hl=en&url='+window.location.href;	
+}
+</script>
+</body>
+</html>
